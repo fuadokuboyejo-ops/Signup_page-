@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Jobley - Join the Waitlist | Track Your Job Applications Effortlessly</title>
+  <meta name="description"
+    content="Sign up for early access to Jobley, the ultimate job application tracker. Organize your job search, track applications, and land your dream job faster.">
+  <meta name="keywords" content="app, waitlist, early access, signup, launch">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="mb-md">Your Job Search, Simplified</h1>
+        <p class="mb-lg" style="font-size: 1.25rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+          Jobley helps you track every job application, interview, and opportunity in one beautiful place. Join the
+          waitlist for early access.
+        </p>
+
+        <!-- Hero Image -->
+        <div class="hero-image">
+          <img src="hero-image.png" alt="App Preview - Modern Interface Design" id="hero-img">
+        </div>
+
+        <!-- Signup Form -->
+        <div class="glass-card">
+          <h2 class="mb-md">Get Early Access to Jobley</h2>
+          <p class="mb-lg">Join job seekers who are ready to transform their job search.</p>
+
+          <form class="signup-form" id="signup-form">
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input type="email" class="email-input" id="email-input" placeholder="Enter your email address" required
+                  aria-label="Email address">
+              </div>
+              <button type="submit" class="btn btn-primary" id="submit-btn">
+                Join Waitlist
+              </button>
+            </div>
+
+            <!-- Success Message -->
+            <div class="message message-success" id="success-message">
+              🎉 Success! You're on the Jobley waitlist. We'll notify you when we launch!
+            </div>
+
+            <!-- Error Message -->
+            <div class="message message-error" id="error-message">
+              ⚠️ <span id="error-text">Please enter a valid email address.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="text-center mb-md">Why Choose Jobley?</h2>
+      <p class="text-center mb-xl" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+        Take control of your job search with powerful tracking, insights, and organization tools.
+      </p>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Visual Tracking</h3>
+          <p>See all your applications at a glance with beautiful, intuitive visualizations and status tracking.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Never Miss a Follow-Up</h3>
+          <p>Stay organized with reminders, deadlines, and interview schedules all in one place.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">💼</div>
+          <h3>Land Your Dream Job</h3>
+          <p>Track your progress, analyze your success rate, and optimize your job search strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: var(--spacing-xl) 0; text-align: center; position: relative; z-index: 1;">
+    <div class="container">
+      <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); margin-bottom: var(--spacing-sm);">
+        © 2026 Jobley. All rights reserved.
+      </p>
+      <a href="privacy.html"
+        style="color: var(--color-primary); text-decoration: none; font-size: var(--font-size-sm); font-weight: 500; transition: all var(--transition-fast);"
+        onmouseover="this.style.color='var(--color-primary-dark)'; this.style.textDecoration='underline';"
+        onmouseout="this.style.color='var(--color-primary)'; this.style.textDecoration='none';">
+        Privacy Policy
+      </a>
+    </div>
+  </footer>
+
+  <!-- Supabase Client - Pinned to v2.39.3 for stability -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
